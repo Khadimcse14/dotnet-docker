@@ -27,5 +27,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
   
+    - name: docker 
       run: docker build .
+    - name: docker ps
       run: docker images
